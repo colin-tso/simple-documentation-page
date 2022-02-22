@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  border-right: 2px solid hsl(0deg 0% 50%);
+}
+
+#navbar > header {
+  font-size: 16pt;
+  text-align: center;
+  padding: 10px;
+}
+
+#navbar > ul {
+  height: 100%;
+  padding: 0 10px;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+  font-size: 12pt;
+  list-style-type: none;
+}
+
+#navbar > ul > li {
+  width: 100%;
+  padding: 10px 0;
+  border-top: solid 1px hsl(0deg 0% 80%);
+}
+
+#navbar > ul > li > a {
+  padding: 0 1em;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#main-doc {
+  margin-left: 320px;
+  padding: 0 10px;
+}
+
+#main-doc header {
+  font-size: 16pt;
+  font-weight: 400;
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+#main-doc article {
+  font-size: 12pt;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+code {
+  display: block;
+  padding: 10px;
+  margin: 0 40px;
+  background-color: hsl(0deg 0% 95%);
+  border-radius: 5px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 10pt;
+  white-space: pre-wrap;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-right: unset;
+    border-bottom: 2px solid hsl(0deg 0% 50%);
+    background-color: white;
+  }
+
+  #navbar > ul {
+    display: block;
+    height: 150px;
+    overflow-y: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    margin-top: 197px;
+    padding: 10px;
+  }
+
+  #Introduction,
+  #The_Basics,
+  #Applying_Lorem,
+  #Applying_Ipsum,
+  "#Combining_Lorem_&_Ipsum" {
+    scroll-margin-top: 197px;
+  }
+}
